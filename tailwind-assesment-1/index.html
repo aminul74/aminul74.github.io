@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
 
     <style>
       .header-wrapper {
         background: #fff;
       }
     </style>
+    <!-- <style>
+            p {
+        color: red;
+      };
+      code {
+        background-color: #eee;
+      };
+      pre code {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 2px;
+      }
+    </style> -->
   </head>
   <body>
     <div
@@ -29,8 +47,8 @@
                 alt="Your Company"
               />
             </a>
-            <div class="relative" data-headlessui-state="">
-              <div class="hidden sm:ml-6 sm:block">
+            <div class="relative">
+              <div class="sm:ml-6 sm:block">
                 <a
                   style="background-color: #03aa6d"
                   ;
@@ -239,20 +257,20 @@
           </h1>
           <h2
             style="color: #ffc0c7"
-            class="p-4 text-2xl md:text-4xl lg:text-xl font-bold text-center"
+            class="p-4 text-2xl sm:text-base md:text-4xl lg:text-xl font-bold text-center"
           >
             With the world's largest web developer site.
           </h2>
           <!-- search -->
           <div class="p-4">
             <form>
-              <div class="flex">
+              <div>
                 <div class="relative w-full">
                   <input
                     type="search"
                     id="location-search"
-                    class="block p-3 w-80 z-40 text-sm text-gray-900 bg-gray-50 rounded-full dark:bg-white-700 dark:placeholder-gray-400 dark:text-black"
-                    placeholder="Search our tutorials"
+                    class="block p-3 w-full max-w-sm z-40 text-sm text-gray-900 bg-gray-50 rounded-full dark:bg-white-700 dark:placeholder-gray-400 dark:text-black"
+                    placeholder="Search our tutorials,e.g.HTML"
                     required
                   />
                   <button
@@ -260,7 +278,7 @@
                     class="absolute top-0 right-0 h-full p-2.5 text-sm font-medium text-white bg-green-700 rounded-e-full"
                   >
                     <svg
-                      class="w-4 h-4"
+                      class="w-10 h-4"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -298,7 +316,7 @@
     <!-- 4th -->
 
     <div class="first_course">
-      <div class="flex">
+      <div class="flex flex-col md:flex-row sm:flex-row">
         <div
           style="background-color: #d9eee1"
           class="flex flex-col items-center justify-center w-full space-y-4"
@@ -347,17 +365,31 @@
         <div style="background-color: #d9eee1" class="w-full p-8">
           <div
             style="background-color: #e7e9eb"
-            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700"
           >
             <h5
-              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+              class="ml-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
             >
               HTML Example
             </h5>
-            <a href="#">
-              <img class="rounded-t-lg" src="./images/card_1.png" alt="" />
-            </a>
-            <div class="p-5">
+            <pre class="max-h-96">
+      <code class="bg-white">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;HTML Tutorial&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        
+    &lt;/body&gt;
+    &lt;/html&gt;
+      </code>
+      </pre>
+
+            <div class="p-4">
               <a
                 href="#"
                 style="background-color: #03aa6d"
@@ -387,7 +419,7 @@
     </div>
     <!-- 5th -->
     <div class="second_course">
-      <div class="flex">
+      <div class="flex flex flex-col md:flex-row sm:flex-row">
         <div
           style="background-color: #fff4a3"
           class="flex flex-col items-center justify-center w-full space-y-4"
@@ -426,20 +458,33 @@
         </div>
 
         <!--Second_course 2nd column -->
-        <div style="background-color: #fff4a3" class="w-full p-8">
+        <div style="background-color: #fff4a3" class="w-full p-6">
           <div
             style="background-color: #e7e9eb"
-            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700"
           >
             <h5
-              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+              class="mt-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
             >
               CSS Example
             </h5>
-            <a href="#">
-              <img class="rounded-t-lg" src="./images/card_2.png" alt="" />
-            </a>
-            <div class="p-5">
+            <pre class="max-h-96">
+    <code class="bg-white">
+    body {
+    background-color: lightblue;
+    }
+                
+    h1 {
+    color: white;
+    text-align: center;
+    }
+                
+    p {
+    font-family: verdana;
+    }
+    </code>
+              </pre>
+            <div class="p-4">
               <a
                 href="#"
                 style="background-color: #03aa6d"
@@ -468,7 +513,7 @@
       </div>
     </div>
     <div class="third_course">
-      <div class="flex">
+      <div class="flex flex flex-col md:flex-row sm:flex-row">
         <div
           style="background-color: #282a35"
           class="flex flex-col items-center justify-center w-full space-y-4"
@@ -510,17 +555,30 @@
         <div style="background-color: #282a35" class="w-full p-8">
           <div
             style="background-color: #e7e9eb"
-            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700"
           >
             <h5
               class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
             >
               Javascript Example
             </h5>
-            <a href="#">
-              <img class="rounded-t-lg" src="./images/card_3.png" alt="" />
-            </a>
-            <div class="p-5">
+            <pre class="max-h-96">
+    <code class="bg-white">
+    &lt;button onclick=&quot;myFunction()&quot;&gt;
+    Click Me!
+    &lt;/button&gt;
+    &lt;script&gt;
+    function myFunction() {
+    let 
+    x = document.getElementById
+    (&quot;demo&quot;);
+    x.style.fontSize = &quot;25px&quot;;
+    x.style.color = &quot;red&quot;;
+    }
+    &lt;/script&gt;
+    </code>
+    </pre>
+            <div class="p-4">
               <a
                 href="#"
                 style="background-color: #03aa6d"
@@ -550,7 +608,7 @@
     </div>
 
     <div class="fourth_course">
-      <div class="flex">
+      <div class="flex flex flex-col md:flex-row sm:flex-row">
         <div
           style="background-color: #f3ecea"
           class="flex flex-col items-center justify-center w-full space-y-4"
@@ -589,20 +647,23 @@
         </div>
 
         <!--Third_course 2nd column -->
-        <div style="background-color: #f3ecea" class="w-full p-8">
+        <div style="background-color: #f3ecea" class="w-full p-6">
           <div
             style="background-color: #e7e9eb"
-            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700"
           >
             <h5
-              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+              class="ml-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
             >
               Python Example
             </h5>
-            <a href="#">
-              <img class="rounded-t-lg" src="./images/card_4.png" alt="" />
-            </a>
-            <div class="p-5">
+            <pre class="max-h-96">
+  <code class="bg-white w-full">
+  if 5 &gt; 2:
+  print(&quot;Five is greater than two!&quot;)
+  </code>
+  </pre>
+            <div class="p-4">
               <a
                 href="#"
                 style="background-color: #03aa6d"
@@ -631,7 +692,7 @@
       </div>
     </div>
     <div class="fifth_course">
-      <div class="flex">
+      <div class="flex flex flex-col md:flex-row sm:flex-row">
         <div
           style="background-color: #96d4d4"
           class="flex flex-col items-center justify-center w-full space-y-4"
@@ -670,19 +731,22 @@
         </div>
 
         <!--Third_course 2nd column -->
-        <div style="background-color: #96d4d4" class="w-full p-8">
+        <div style="background-color: #96d4d4" class="w-full p-6">
           <div
             style="background-color: #e7e9eb"
-            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700 pt-10"
+            class="max-w-sm bg-white border border-gray-300 rounded-lg dark:border-white-700"
           >
             <h5
-              class="mb-4 ml-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+              class="ml-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
             >
               Python Example
             </h5>
-            <a href="#">
-              <img class="rounded-t-lg" src="./images/card_4.png" alt="" />
-            </a>
+            <pre class="max-h-96">
+  <code class="bg-white w-full">
+  SELECT * FROM Customers
+  WHERE Country='Mexico';
+  </code>
+  </pre>
             <div class="p-5">
               <a
                 href="#"
@@ -713,16 +777,17 @@
     </div>
     <!-- Learn_course with 2 grid  #FFB3BB-->
 
-    <div class="Learn_course_wrapper" style="background-color: #282a35">
-      <div class="flex justify-center">
+    <div class="Learn_course_wrapper p-2" style="background-color: #282a35">
+      <div class="flex flex-col sm:flex-row md:flex-row justify-center">
+        
         <div
           style="background-color: #ffb3bb"
-          class="m-4 w-1/3 p-8 border rounded-lg text-center"
+          class="p-8 m-2 border rounded-lg text-center"
         >
           <a href="#">
             <h2 class="mb-4 text-4xl font-bold tracking-tight">PHP</h2>
           </a>
-          <p class="mb-4 font-normal text-base text-[#3a3a3a]">
+          <p class="font-normal text-base text-[#3a3a3a]">
             A web server programming language
           </p>
           <a
@@ -735,7 +800,7 @@
 
         <div
           style="background-color: #ffb3bb"
-          class="m-4 p-8 w-1/3 border rounded-lg text-center"
+          class="p-8 m-2 border rounded-lg text-center"
         >
           <a href="#">
             <h2 class="mb-4 text-4xl font-bold tracking-tight">PHP</h2>
@@ -754,8 +819,8 @@
     </div>
 
     <div class="footer_wrapper" style="background-color: #fff">
-      <div class="flex w-full justify-center space-x-8 py-8">
-        <ul class="text-center text-sm">
+      <div class="flex flex-wrap justify-center space-x-8 py-8">
+        <ul class="text-center text-sm mb-4">
           <li class="text-xl font-bold mb-2">Top Tutorials</li>
           <li><a href="#">HTML Tutorial</a></li>
           <li><a href="#">CSS Tutorial</a></li>
@@ -771,7 +836,7 @@
           <li><a href="#">jQuery Tutorial</a></li>
         </ul>
 
-        <ul class="text-center text-sm">
+        <ul class="text-center text-sm mb-4">
           <li class="text-xl font-bold mb-2">Top References</li>
           <li><a href="#">HTML Tutorial</a></li>
           <li><a href="#">CSS Tutorial</a></li>
@@ -786,7 +851,7 @@
           <li><a href="#">C++ Tutorial</a></li>
           <li><a href="#">jQuery Tutorial</a></li>
         </ul>
-        <ul class="text-center text-sm">
+        <ul class="text-center text-sm mb-4">
           <li class="text-xl font-bold mb-2">Top Examples</li>
           <li><a href="#">HTML Tutorial</a></li>
           <li><a href="#">CSS Tutorial</a></li>
@@ -801,7 +866,7 @@
           <li><a href="#">C++ Tutorial</a></li>
           <li><a href="#">jQuery Tutorial</a></li>
         </ul>
-        <ul class="text-center text-sm">
+        <ul class="text-center text-sm mb-4">
           <li class="text-xl font-bold mb-2">Get Certified</li>
           <li><a href="#">HTML Tutorial</a></li>
           <li><a href="#">CSS Tutorial</a></li>
@@ -839,5 +904,9 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
